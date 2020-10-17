@@ -12,8 +12,7 @@ function Card(props) {
             <CardInfo 
                     name={props.name} 
                     description={props.description} 
-                    lat={props.lat}
-                    lon={props.lon}
+                    coordinates={props.coordinates}
                 />
         </div>
       </div>
