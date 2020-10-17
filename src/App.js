@@ -4,7 +4,9 @@ import Card from './components/Card.js';
 import data from './atlas-of-remote-islands.js';
 
 function App() {
-  console.log(data);
+  //console.log(data);
+  let island1 = data.islands[0];
+  console.log(island1.coords.lat);
   
   return (
     <div>
@@ -16,7 +18,12 @@ function App() {
         <h2 className="section-title">Islands</h2>
         <ul className="cards">
           
-          <Card />
+          <Card name={island1.name} 
+                description={island1.description} 
+                img={island1.image} 
+                lat={island1.coords.lat} 
+                lon={island1.coords.lon}
+            />
           
         </ul>
       </div>
